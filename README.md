@@ -1,1 +1,1 @@
-# coffee-bistro
+# The Coffee Bistro
