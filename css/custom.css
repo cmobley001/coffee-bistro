@@ -1,4 +1,50 @@
 /*
-* font-family: 'Nunito', sans-serif;
-* font-family: 'Open Sans', sans-serif;
+* font-family: 'Nunito', sans-serif; //headings
+* font-family: 'Open Sans', sans-serif; //body copy
 */
+
+/* website color theme */
+/* Color Theme Swatches in Hex */
+.Copy-of-Coffee-flavored-Coffee-1-hex { color: #EBB669; }
+.Copy-of-Coffee-flavored-Coffee-2-hex { color: #AE9C82; }
+.Copy-of-Coffee-flavored-Coffee-3-hex { color: #9E7B47; }
+.Copy-of-Coffee-flavored-Coffee-4-hex { color: #EBD3B0; }
+.Copy-of-Coffee-flavored-Coffee-5-hex { color: #6B5330; }
+
+/* Color Theme Swatches in RGBA */
+.Copy-of-Coffee-flavored-Coffee-1-rgba { color: rgba(234, 182, 105, 1); }
+.Copy-of-Coffee-flavored-Coffee-2-rgba { color: rgba(174, 156, 130, 1); }
+.Copy-of-Coffee-flavored-Coffee-3-rgba { color: rgba(158, 122, 70, 1); }
+.Copy-of-Coffee-flavored-Coffee-4-rgba { color: rgba(235, 210, 175, 1); }
+.Copy-of-Coffee-flavored-Coffee-5-rgba { color: rgba(107, 82, 47, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Copy-of-Coffee-flavored-Coffee-1-hsla { color: hsla(35, 76, 66, 1); }
+.Copy-of-Coffee-flavored-Coffee-2-hsla { color: hsla(35, 21, 59, 1); }
+.Copy-of-Coffee-flavored-Coffee-3-hsla { color: hsla(35, 38, 44, 1); }
+.Copy-of-Coffee-flavored-Coffee-4-hsla { color: hsla(35, 59, 80, 1); }
+.Copy-of-Coffee-flavored-Coffee-5-hsla { color: hsla(35, 38, 30, 1); }
+
+body {
+    background-color: #9E7B47;
+    font-family: "Nunito", sans-serif;
+}
+
+#main-nav {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#main-nav .nav-link {
+    color: white;
+}
+
+#main-nav .nav-link:hover {
+    color: #EBD3B0;
+}
+
+#main-nav .navbar-brand {
+    color: #EBD3B0;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
