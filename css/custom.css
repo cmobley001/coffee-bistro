@@ -47,9 +47,20 @@ p {
 }
 
 #main-nav .navbar-brand {
-    color: #EBD3B0;
+    color: #6B5330;
     font-size: 1.5rem;
     font-weight: 100;
+}
+
+/* custom navbar color 
+.navbar-custom {
+    background-color: #EBB669;
+}
+*/
+
+.navbar.scrolled {
+    background: #EBB669;
+    transition: background 300ms;
 }
 
 .img-border {
@@ -59,6 +70,15 @@ p {
 .img-small {
     max-width: 20%;
 }
+.blockquote {
+    
+    font-size: 1rem;
+}
+
 .blockquote-footer {
     color: white;
+    font-size: 1.2rem;
+}
+.mgr-top {
+    margin-top: 5rem;
 }

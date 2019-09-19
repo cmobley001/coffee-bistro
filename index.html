@@ -22,7 +22,7 @@
 </head>
 
 <body>
-  <nav id="main-nav" class="navbar navbar-dark bg-dark navbar-expand-md py-0">
+  <nav id="main-nav" class="navbar navbar-dark navbar-expand-md fixed-top py-0">
     <a href="#" class="navbar-brand mr-4">Coffee Bistro</a>
     <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarLinks" aria-label="Toggle Menu">
       <span class="navbar-toggler-icon"></span>
@@ -42,7 +42,7 @@
     </div>
   </nav>
 
-  <section id="first-row"  class="container mt-5">
+  <section id="first-section"  class="container mt-5 pt-5">
     <div class="row text-center">
       <div class="col-lg-6 pb-sm-4">
         <h2 class="display-5">Welcome to Coffee Bistro</h2>
@@ -55,7 +55,7 @@
     </div>
   </section>
 
-  <section id="second-row" class="container-fluid px-0 mt-5">
+  <section id="second-section" class="container-fluid px-0 mgr-top">
     <div class="row">
       <div class="col-md-6 order-2 order-md-1">
         <img src="images/nathan-dumlao-coffeeshop-unsplash.jpg" class="img-fluid" alt="image">
@@ -64,12 +64,17 @@
         <h2>Our Famous Lattes</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nesciunt, accusantium illo odio sapiente qui dolorum vitae dolorem perspiciatis corporis beatae veritatis facere officia quae consequuntur cumque obcaecati? Natus, asperiores?</p>
         <img src="images/coffee-cup.png" class="img-small mb-3 d-none d-md-inline" alt="coffee image">
-        <blockquote class="blockquote px-5">
-          <p class="mb-0">Actually, this seems to be the basic need of the human heart in nearly every great crisis — a good hot cup of coffee.</p>
-          <footer class="blockquote-footer text-right">Alexander King</footer>
-        </blockquote>
-      </div>
-    </div>
+        
+        <div class="row justify-content-center">
+          <div class="col-10">
+            <blockquote class="blockquote px-5">
+              <p class="mb-0">Actually, this seems to be the basic need of the human heart in nearly every great crisis — a good hot cup of coffee.</p>
+              <footer class="blockquote-footer text-right">Alexander King</footer>
+            </blockquote>
+          </div>
+        </div><!-- inner row -->
+      </div><!-- col-md-6 -->
+    </div><!-- row -->
   </section>
 
 <script src="js/jquery-3.4.1.min.js"></script>
@@ -77,7 +82,14 @@
 <script src="js/bootstrap.min.js"></script>
 
 <!-- custom js -->
-
+<script>
+  $(function () {
+      $(document).scroll(function () {
+          var $nav = $("#main-nav");
+          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+      });
+  });
+</script>
 
 
 </body>
