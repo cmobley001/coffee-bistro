@@ -29,6 +29,9 @@ body {
     background-color: #9E7B47;
     font-family: "Nunito", sans-serif;
 }
+p {
+    font-family: 'Open Sans', sans-serif;
+}
 
 #main-nav {
     font-size: 1.5rem;
@@ -47,4 +50,15 @@ body {
     color: #EBD3B0;
     font-size: 1.5rem;
     font-weight: 100;
+}
+
+.img-border {
+    border: 6px solid #EBD3B0;
+    border-radius: 2px;
+}
+.img-small {
+    max-width: 20%;
+}
+.blockquote-footer {
+    color: white;
 }
